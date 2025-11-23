@@ -1,0 +1,20 @@
+data:
+  csv_path: data/synthetic_multivariate.csv
+  seed: 42
+  n_samples: 5000
+  freq: 'H'
+model:
+  lookback: 48
+  horizon: 24
+  batch_size: 64
+  epochs: 20
+  lr: 0.001
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.1
+training:
+  device: cpu
+  val_split: 0.2
+  walk_forward_windows: 3
+artifacts:
+  dir: artifacts
